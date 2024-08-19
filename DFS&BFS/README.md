@@ -4,4 +4,4 @@
 
 <hr>
 
-- __[[Gold V] 맥주 마시면서 걸어가기 - 9205](https://github.com/byunghyunkim0/Algorithm/tree/main/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9/13023.%E2%80%85ABCDE)__
+- __[[Gold V] 맥주 마시면서 걸어가기 - 9205](https://github.com/byunghyunkim0/Algorithm/tree/main/DFS%26BFS/9205.%E2%80%85%EB%A7%A5%EC%A3%BC%E2%80%85%EB%A7%88%EC%8B%9C%EB%A9%B4%EC%84%9C%E2%80%85%EA%B1%B8%EC%96%B4%EA%B0%80%EA%B8%B0)__
