@@ -17,3 +17,7 @@
 ## DFS & BFS
 
 - __[DFS&BFS](https://github.com/byunghyunkim0/Algorithm/tree/main/DFS%26BFS)__
+
+## 수학
+
+- __[수학](https://github.com/byunghyunkim0/Algorithm/tree/main/DFS%26BFS)__
