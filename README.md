@@ -8,26 +8,32 @@
 
 ## 1. 정렬
 
+- __[정렬](./01.%20정렬/)__
+
 ## 2. 탐색 / 검색
 
-- __[백트래킹](https://github.com/byunghyunkim0/Algorithm/tree/main/02.%20%ED%83%90%EC%83%89%20%26%20%EA%B2%80%EC%83%89/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9)__
+- __[백트래킹](./02.%20탐색%20&%20검색/백트래킹/)__
 
 ## 3. DFS & BFS
 
-- __[DFS&BFS](https://github.com/byunghyunkim0/Algorithm/tree/main/03.%20DFS%20%26%20BFS)__
+- __[DFS&BFS](./03.%20DFS%20&%20BFS/)__
 
 ## 4. 그래프
 
+- __[그래프](./04.%20그래프/)__
+
 ## 5. 동적 계획법(DP)
 
-- __[DP](https://github.com/byunghyunkim0/Algorithm/tree/main/05.%20%EB%8F%99%EC%A0%81%20%EA%B3%84%ED%9A%8D%EB%B2%95(DP))__
+- __[DP](./05.%20동적%20계획법(DP)/)__
 
 ## 6. 그리디
 
+- __[그리디](./06.%20그리디/)__
+
 ## 7. 수학
 
-- __[수학](https://github.com/byunghyunkim0/Algorithm/tree/main/07.%20%EC%88%98%ED%95%99)__
+- __[수학](./07.%20수학/)__
 
 ## 8. 구현
 
-- __[구현](https://github.com/byunghyunkim0/Algorithm/tree/main/08.%20%EA%B5%AC%ED%98%84)__
+- __[구현](./08.%20구현/)__
