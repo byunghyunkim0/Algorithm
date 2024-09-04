@@ -39,3 +39,14 @@
 
 <p>암호가 잘못되어 암호를 해석할 수 없는 경우에는 0을 출력한다.</p>
 
+### 풀이 과정
+
+암호의 자리수 i에 대해서 i번째 수가 1 ~ 9까지의 숫자라면, dp<sub>i - 1</sub>에 해당하는 암호를 넣고, 0이라면 이전의 값을 가져와 10 <= 두자리의 합 <= 26이라면 dp<sub>i - 2</sub> 뒤에 암호를 넣는 것과 같다.
+
+dp<sub>i</sub> = 1 ( i = 1 & str<sub>i</sub> != 0 )
+
+dp<sub>i</sub> = dp<sub>i - 1</sub> + dp<sub>i</sub> ( i > 1 & str<sub>i</sub> != 0 )
+
+dp<sub>i</sub> = dp<sub>i - 2</sub> + dp<sub>i - 1</sub> + dp<sub>i</sub> ( i > 2 & (10 <= str<sub>i - 2</sub> * 10 + str<sub>i - 1</sub> <= 26) )
+
+다른 경우는 암호를 생성할수가 없다.
