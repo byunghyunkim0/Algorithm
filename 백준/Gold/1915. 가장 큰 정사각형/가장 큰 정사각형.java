@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 public class Main {
     static int n;
     static int m;
-    static int[][] map;
+    static char[][] map;
     static int[][] count;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -16,20 +16,17 @@ public class Main {
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
 
-        map = new int[n + 1][m + 1];
-        for (int i = 1; i <= n; i++) {
-            String row = br.readLine();
-            for (int j = 1; j <= m; j++) {
-                map[i][j] = row.charAt(j - 1) - '0';
-            }
+        map = new char[n][m];
+        for (int i = 0; i < n; i++) {
+            map[i] = br.readLine().toCharArray();
         }
 
         count = new int[n + 1][m + 1];
         int maxLen = 0;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
-                if (map[i][j] == 1) {
-                    count[i][j] = getSize(i, j, count[i - 1][j - 1] + 1);
+                if (map[i - 1][j - 1] == '1') {
+                    count[i][j] = getSize(i - 1, j - 1, count[i - 1][j - 1] + 1);
                     maxLen = Math.max(maxLen, count[i][j]);
                 }
             }
@@ -42,14 +39,14 @@ public class Main {
         int r = 0;
         int c = 0;
         for (int i = x; i > x - len; i--) {
-            if (map[i][y] == 1) {
+            if (map[i][y] == '1') {
                 r++;
             } else {
                 break;
             }
         }
         for (int j = y; j > y - len; j--) {
-            if (map[x][j] == 1) {
+            if (map[x][j] == '1') {
                 c++;
             } else {
                 break;
