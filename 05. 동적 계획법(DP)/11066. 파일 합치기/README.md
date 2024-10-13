@@ -30,3 +30,9 @@
 
  <p>프로그램은 표준 출력에 출력한다. 각 테스트 데이터마다 정확히 한 행에 출력하는데, 모든 장을 합치는데 필요한 최소비용을 출력한다.</p>
 
+### 풀이 과정
+
+최소값을 저장하기 위해서 2차원 dp배열을 생성<br>
+<code>dp[i][j]</code>의 뜻은 i ~ j까지의 파일을 합칠때의 최소 비용<br>
+<code>dp[i][i]</code>의 뜻은 i번째 파일의 비용, <code>dp[i][i + 1]</code>의 값은 <code>file[i] + file[i + 1]</code><br>
+<code>dp[i][j]</code>의 점화식은 <code>dp[i][k] + dp[k + 1][j] + (file[j] - file[i - 1])</code>의 값은 k가 변할때 최소값
