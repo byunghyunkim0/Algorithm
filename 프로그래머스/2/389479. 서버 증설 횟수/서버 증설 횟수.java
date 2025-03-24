@@ -3,20 +3,15 @@ import java.util.*;
 class Solution {
     public int solution(int[] players, int m, int k) {
         int answer = 0;
-        int n = players.length;
-        int[] server = new int[n + k];
-        for (int i = 0; i < n; i++) {
-            if (i != 0) {
-                server[i] += server[i - 1];
-            }
-            int temp = players[i] / m - server[i];
-            
-            if (temp > 0) {
-                server[i + k] -= temp;
-                server[i] += temp;
-                answer += temp;
+        int[] server = new int[players.length];
+        for (int i = 0; i < players.length; i++) {
+            if (players[i] % m == 0) {
+                server[i] = players[i] / m;
+            } else {
+                server[i] = (players[i] / m) + 1;
             }
         }
+        System.out.println(Arrays.toString(server));
         return answer;
     }
 }

@@ -1,6 +1,6 @@
 # [level 2] 서버 증설 횟수 - 389479 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/389479#) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/389479) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 03월 24일 19:09:12
+2025년 03월 24일 19:09:19
 
 ### 문제 설명
 
